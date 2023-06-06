@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TransPedidosentregarFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/bordeverde">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/eliminar">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/manzanas">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text=" DETALLES DE DESPACHO"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/green"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:text="Se encuentra en camino el pedido"
+            android:textAlignment="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="-120dp"
+            android:textColor="@color/green"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="155dp"
+            android:layout_marginLeft="-240dp"
+            android:text="Fecha de despacho 28 de Febrero 2023"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="-250dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/linea">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="-290dp"
+            android:textColor="@color/black"
+            android:text="          Numero de Pedido               CO123456789   "
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:text="27 de Enero   16:30"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="-300dp"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:text="Orden en camino               La orden se encuentra en camino"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo"
+        android:scaleY="1.1">
+    </ImageView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="@color/blanco_gris"
+                    android:layout_width="300dp"
+                    android:layout_height="490dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/cancelarnegro"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="14dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:text="DETALLE DE DESPACHOS"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/green"
+                                android:textSize="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp">
+
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="25dp">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="65dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:src="@drawable/manzanas">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="50dp"
+                                android:layout_marginRight="70dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/green"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:text="Se encuentra en camino el pedido">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fecha de despacho 28 de febrero 2023"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/linea">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Numero de pedido     CO222023"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="320dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:text="21 de enero  16:30"
+                                android:textAlignment="textEnd">
+                            </TextView>
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="240dp"
+                                android:background="@color/green"
+                                android:layout_marginLeft="5dp">
+                            </View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="320dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Orden en camino la orden se  encuentra en camino"
+                                    android:layout_marginLeft="5dp">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Orden recogida la orden ha salido de su finca"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="15dp">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Orden despachada usted despacho la orden"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="15dp">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Orden realizada"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="15dp">
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</FrameLayout>
