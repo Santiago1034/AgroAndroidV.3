@@ -3,34 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/registrarFragment">
+    app:startDestination="@id/inicioRolFragment">
 
     <activity
         android:id="@+id/homeActivity"
         android:name="com.example.agroexpress.HomeActivity"
         android:label="activity_home"
         tools:layout="@layout/activity_home">
-
     </activity>
-    <fragment
-        android:id="@+id/iniciarSesionFragment"
-        android:name="com.example.agroexpress.IniciarSesionFragment"
-        android:label="fragment_iniciar_sesion"
-        tools:layout="@layout/fragment_iniciar_sesion" />
     <fragment
         android:id="@+id/registrarFragment"
         android:name="com.example.agroexpress.RegistrarFragment"
         android:label="fragment_registrar"
-        tools:layout="@layout/fragment_registrar" >
-        <action
-            android:id="@+id/action_registrarFragment_to_masOpcionesFragment"
-            app:destination="@id/masOpcionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_registrar" />
     <fragment
         android:id="@+id/inicioRolFragment"
         android:name="com.example.agroexpress.InicioRolFragment"
         android:label="InicioRolFragment"
-        tools:layout="@layout/activity_inicio_roles"/>
+        tools:layout="@layout/activity_inicio_roles">
+        <action
+            android:id="@+id/action_inicioRolFragment_to_masOpcionesFragment"
+            app:destination="@id/masOpcionesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/masOpcionesFragment"
         android:name="com.example.agroexpress.MasOpcionesFragment"
@@ -124,4 +118,19 @@
         android:name="com.example.agroexpress.Soporte_RecyclerFragment"
         android:label="fragment_soporte__recycler"
         tools:layout="@layout/fragment_soporte__recycler" />
+    <fragment
+        android:id="@+id/iniciarSesionFragment"
+        android:name="com.example.agroexpress.IniciarSesionFragment"
+        android:label="fragment_iniciar_sesion"
+        tools:layout="@layout/fragment_iniciar_sesion" />
+    <activity
+        android:id="@+id/registrarActivity"
+        android:name="com.example.agroexpress.RegistrarActivity"
+        android:label="activity_registrar"
+        tools:layout="@layout/activity_registrar" />
+    <activity
+        android:id="@+id/iniciar_SesionActivity"
+        android:name="com.example.agroexpress.Iniciar_SesionActivity"
+        android:label="activity_iniciar_sesion"
+        tools:layout="@layout/activity_iniciar_sesion" />
 </navigation>

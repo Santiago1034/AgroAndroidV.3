@@ -16,6 +16,7 @@ class Activity_Inicio_Roles : AppCompatActivity() {
     private val list = mutableListOf<CarouselItem>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio_roles)
         val carousel: ImageCarousel = findViewById(R.id.carousel)

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/fondo_fin"
     android:layout_marginTop="50dp"
     android:onClick="reproducir"
@@ -11,7 +11,7 @@
     tools:context=".Activity_Inicio_Roles">
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -22,12 +22,14 @@
 
                 <org.imaginativeworld.whynotimagecarousel.ImageCarousel
                     android:id="@+id/carousel"
-                    android:layout_width="match_parent"
-                    android:layout_height="230dp"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
                     android:orientation="vertical"
                     android:layout_marginBottom="20dp">
 

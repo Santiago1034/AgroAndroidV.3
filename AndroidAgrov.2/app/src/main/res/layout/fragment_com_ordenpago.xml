@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleY="1.1"
-        android:src="@drawable/fondo"/>
+        android:src="@drawable/fondo_fin"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

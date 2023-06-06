@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerproducto"
             android:layout_width="match_parent"
@@ -68,11 +69,11 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <ImageButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="64dp"
             android:layout_height="64dp"
+            android:backgroundTint="@color/white"
             android:src="@drawable/canasta"
-            android:background="@color/transparente"
             android:layout_marginTop="660dp"
             android:layout_marginHorizontal="340dp"/>
     </LinearLayout>
@@ -81,7 +82,7 @@
         android:id="@+id/gravityBtnagregarProduc"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        app:backgroundTint="@color/black"
+        app:backgroundTint="@color/white"
         android:src="@drawable/mas"
         android:layout_marginTop="550dp"
         android:layout_marginHorizontal="340dp">

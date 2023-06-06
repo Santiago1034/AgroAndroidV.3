@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".IniciarSesionFragment"
-    android:background="@drawable/fondo">
+    android:background="@drawable/fondo_fin">
 
         <LinearLayout
             android:layout_width="300dp"
@@ -28,7 +28,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="CORREO *"
+                    android:text="DOCUMENTO *"
                     android:textColor="@color/green"
                     android:textStyle="bold"
                     android:textAlignment="center"
@@ -43,9 +43,9 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="32dp"
                     android:layout_marginRight="32dp"
-
-                    android:background="@color/gris"
+                    android:background="@color/blanco_gris"
                     android:ems="10"
+                    android:paddingLeft="10dp"
                     android:hint="@string/Email"
                     android:inputType="textPersonName"
                     />
@@ -70,7 +70,8 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginRight="32dp"
                     android:hint="@string/Password"
-                    android:background="@color/gris"/>
+                    android:paddingLeft="10dp"
+                    android:background="@color/blanco_gris"/>
 
 
                 <androidx.appcompat.widget.AppCompatButton
