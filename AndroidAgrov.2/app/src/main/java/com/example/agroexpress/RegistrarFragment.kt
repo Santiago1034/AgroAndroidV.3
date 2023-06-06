@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,6 +19,10 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class RegistrarFragment : Fragment() {
+
+    private lateinit var spinerDepartamento : Spinner
+    private lateinit var spinerMunicipio : Spinner
+
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,7 +40,31 @@ class RegistrarFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_registrar, container, false)
+        //return inflater.inflate(R.layout.fragment_registrar, container, false)
+        val t = inflater.inflate(R.layout.fragment_registrar, container, false)
+        val spinner1 = t.findViewById<Spinner>(R.id.SpinnerDepartamentos)
+        val spinner2 = t.findViewById<Spinner>(R.id.SpinnerMunicipio)
+
+        ArrayAdapter.createFromResource(
+            requireContext(),
+            R.array.departamentos_array,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            spinner1.adapter = adapter
+        }
+
+        ArrayAdapter.createFromResource(
+            requireContext(),
+            R.array.municipios_array,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            spinner2.adapter = adapter
+        }
+        this.spinerDepartamento = t.findViewById(R.id.SpinnerDepartamentos)
+        this.spinerMunicipio = t.findViewById(R.id.SpinnerMunicipio)
+        return t
     }
 
     companion object {
