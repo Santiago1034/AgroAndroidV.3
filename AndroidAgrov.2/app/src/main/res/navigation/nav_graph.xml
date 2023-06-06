@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/inicioRolFragment">
+    app:startDestination="@id/registrarFragment">
 
     <activity
         android:id="@+id/homeActivity"
@@ -21,16 +21,16 @@
         android:id="@+id/registrarFragment"
         android:name="com.example.agroexpress.RegistrarFragment"
         android:label="fragment_registrar"
-        tools:layout="@layout/fragment_registrar" />
+        tools:layout="@layout/fragment_registrar" >
+        <action
+            android:id="@+id/action_registrarFragment_to_masOpcionesFragment"
+            app:destination="@id/masOpcionesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/inicioRolFragment"
         android:name="com.example.agroexpress.InicioRolFragment"
         android:label="InicioRolFragment"
-        tools:layout="@layout/activity_inicio_roles">
-        <action
-            android:id="@+id/action_inicioRolFragment_to_masOpcionesFragment"
-            app:destination="@id/masOpcionesFragment" />
-    </fragment>
+        tools:layout="@layout/activity_inicio_roles"/>
     <fragment
         android:id="@+id/masOpcionesFragment"
         android:name="com.example.agroexpress.MasOpcionesFragment"
