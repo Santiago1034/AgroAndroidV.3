@@ -40,6 +40,7 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/IniciarSesionHome"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="INICIAR SESION"
@@ -52,7 +53,7 @@
 
         </androidx.appcompat.widget.AppCompatButton>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:id="@+id/RegistarUsuario"
             android:layout_width="144dp"
             android:layout_height="match_parent"
@@ -63,7 +64,7 @@
             android:text="REGISTRARSE"
             android:textColor="@color/white">
 
-        </androidx.appcompat.widget.AppCompatButton>
+        </Button>
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="144dp"
