@@ -62,7 +62,7 @@ class Produc_RecyclerFragment : Fragment(),ItemListener {
         val ll = inflater.inflate(R.layout.fragment_produc__recycler, container, false)
 
         this.floatingBtn = ll.findViewById(R.id.gravityBtnagregarProduc)
-        val url= "http://192.168.1.58:8080/Listarprductos"
+        val url= "http://192.168.126.36/DatosBdagro/bdagro.php"
 
 
         /*val url= "http://localhost/DatosBdAgro/bdagro.php"*/
